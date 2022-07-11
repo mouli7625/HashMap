@@ -1,5 +1,5 @@
 import java.util.*;
-public class prog4 {
+public class program5 {
     public static void main(String[]args)
     {
         Scanner sc=new Scanner(System.in);
@@ -8,13 +8,10 @@ public class prog4 {
         map.put(2, "b");
         map.put(3, "c");
         System.out.println("Values");
-        for(Map.Entry m: map.entrySet())
-        {
-            System.out.println(m);
-        }
-        System.out.println("After clear() function");
+       boolean x= map.isEmpty();
+        System.out.println(x);
         map.clear();
-        System.out.print("New map = "+map);
+        System.out.print(map.isEmpty());
 
     }
     
